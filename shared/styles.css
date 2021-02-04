@@ -1,0 +1,230 @@
+:root {
+  --primary-light: #0297d0;
+  --primary-middle-color: #264b78;
+  --primary-dark: #132554;
+  --rich-black: #040404;
+  --primary-white: #f3f4f6;
+  --primary-grey: #b7bdcb;
+  --secondary-grey: #737e9a;
+}
+
+.primary-logo {
+  content: url("/images/logo_size.jpg");
+}
+
+.github {
+  content: url("/images/GitHub-Mark-Light-32px.png");
+}
+
+.linkedin {
+  content: url("/images/In-White-28px-R.png");
+}
+
+.portsmouth {
+  content: url("/images/portsmouth.png");
+}
+
+.head-shot {
+  content: url("/images/head_shot.jpg");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+.top-nav {
+  /* height: 50px; */
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary-dark);
+  align-items: center;
+}
+
+.main-nav {
+  display: none;
+  list-style-type: none
+}
+
+.complete-nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.social-nav {
+  justify-self: flex-start;
+}
+
+.nav-links {
+  text-decoration: none;
+  columns: black;
+  color: var(--primary-white)
+}
+
+.main-nav li {
+  text-align: right;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+.navbar-toggle {
+  width: 30px;
+  height: 30px;
+  float: right;
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 4px;
+  cursor: pointer; 
+}
+
+.active {
+  display: block;
+}
+
+@media screen and (min-width: 786px) {
+
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 50px;
+    align-items: center;
+  }
+
+  .complete-nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .social-nav {
+    justify-self: flex-start;
+  }
+
+  .main-nav {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-self: flex-end;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .nav-links:hover {
+    color: var(--primary-grey);
+  }
+
+}
+
+body {
+  background-color: var(--primary-white);
+}
+
+/* nav {
+  background-color: var(--primary-dark);
+  height: 75px;
+  max-width: 1400px;
+  overflow: hidden;
+} */
+
+/* .topnav a {
+  float: left;
+  display: block;
+  padding: 14px 15px;
+} */
+
+.background {
+  width: 100%;
+  height: 100vh;
+  min-height: 100%;
+  position: relative;
+}
+
+.background-image {
+  /* background-image: url("/images/portsmouth.png"); */
+  position: relative; 
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.background-image::before {
+  content: "";
+  background-image: url("/images/portsmouth.png");
+  /* background-color: var(--primary-grey); */
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.5;
+}
+
+.primary-content {
+  z-index: 5000;
+}
+
+/* .background-dark {
+  background-color: var(--primary-dark);
+  padding: 0px;
+} */
+
+/* .img-container { */
+  /* max-width: 5rem; */
+  /* z-index: 5000; */
+/* } */
+
+.img-container img {
+  max-width: 20rem;
+  border-radius: 50%;
+  border: .5rem solid var(--primary-white);
+}
+
+/* .menu-item {
+  color: var(--primary-white);
+  padding: 0.5rem 1rem;
+  display: block;
+} */
+
+/* .menu-item:hover {
+  color: var(--primary-grey);
+  padding: 0.5rem 1rem;
+  display: block;
+} */
+
+/* .title {
+  font-weight: 400;
+  color: aqua;
+} */
+
+/* .menu-img {
+  height: 100%;
+  width: auto;
+} */
+
+/* .name {
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+  color: var(--primary-white);
+} */
+
+/* .navbar-position {
+  z-index: 1000;
+} */
