@@ -35,41 +35,68 @@
 }
 
 body {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: "Montserrat", sans-serif;
+}
+
+#menu-component {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5000;
+}
+
+#menu-component :hover {
+  background-color: var(--primary-dark);
+}
+
+.background-dark {
+  background-color: var(--primary-dark);
+  color: var(--primary-white);
+}
+
+.background-light {
+  background-color: var(--primary-white);
+  color: var(--primary-dark);
 }
 
 .top-nav {
-  /* height: 50px; */
   display: flex;
   justify-content: space-between;
-  background-color: var(--primary-dark);
   align-items: center;
 }
 
-.main-nav {
+.main-nav-horizontal, .main-nav {
   display: none;
   list-style-type: none
 }
 
-.complete-nav {
-  display: flex;
-  flex-direction: row;
+.main-nav-horizontal, .main-nav li {
+  text-align: right;
+  text-decoration: none;
+  font-size: 26px;
 }
 
-.social-nav {
-  justify-self: flex-start;
+.logo-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.menu-img {
+  padding-left: 1rem;
+}
+
+.name {  
+  font-size: 35px;
+  color: var(--primary-white);
 }
 
 .nav-links {
   text-decoration: none;
   columns: black;
   color: var(--primary-white)
-}
-
-.main-nav li {
-  text-align: right;
-  text-decoration: none;
-  font-size: 26px;
 }
 
 .navbar-toggle {
@@ -80,13 +107,102 @@ body {
   font-size: 20px;
   border-radius: 4px;
   cursor: pointer; 
+  background-color: inherit;
+  color: var(--primary-white);
 }
 
 .active {
   display: block;
 }
 
-@media screen and (min-width: 786px) {
+
+body {
+  background-color: var(--primary-white);
+  color: var(--rich-black);
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  min-height: 100%;
+  position: relative;
+  place-items: flex-start center;
+  display: grid;
+}
+
+.background-image {
+  position: relative; 
+  height: 100vh;
+  width: 100%;
+}
+
+.background-image::before {
+  content: "";
+  background-image: url("/images/portsmouth.png");
+  opacity: .3;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.background-image::after {
+  display: inline-block;
+}
+
+.background-overlay {
+  background-color: var(--primary-white);
+  opacity: 75%;
+}
+
+.primary-content {
+  padding-top: 15%;
+  color: var(--primary-white); 
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.img-container {
+  display: grid;
+  place-items: flex-start center;
+}
+
+.img-container img {
+  max-width: 10rem;
+  border-radius: 50%;
+  border: 3px solid var(--primary-white);
+}
+
+.details {
+  display: grid;
+  place-items: flex-start center;
+  padding-top: 1rem;
+  font-size: 1rem;
+}
+
+.text {
+  padding: 1rem 0rem 0rem 0rem;
+}
+
+.secondary-content {
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+@media screen and (min-width: 900px) {
 
   .top-nav {
     display: flex;
@@ -105,7 +221,7 @@ body {
     justify-self: flex-start;
   }
 
-  .main-nav {
+  .main-nav-horizontal {
     display: flex;
     margin-right: 30px;
     flex-direction: row;
@@ -114,6 +230,10 @@ body {
 
   .main-nav li {
     margin: 0;
+  }
+
+  .main-nav {
+    display: none;
   }
 
   .nav-links {
@@ -128,103 +248,37 @@ body {
     color: var(--primary-grey);
   }
 
+  .primary-content {
+    padding-top: 15%;
+    color: var(--primary-white); 
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .img-container {
+    display: grid;
+    place-items: flex-start center;
+  }
+  
+  .img-container img {
+    max-width: 20rem;
+    border-radius: 50%;
+    border: 10px solid var(--primary-white);
+  }
+  
+  .details {
+    display: grid;
+    place-items: flex-start center;
+    padding-top: 1rem;
+    font-size: 2rem;
+  }
+  
+  .text {
+    padding: 1rem 0rem 0rem 0rem;
+  }
+
+
 }
-
-body {
-  background-color: var(--primary-white);
-}
-
-/* nav {
-  background-color: var(--primary-dark);
-  height: 75px;
-  max-width: 1400px;
-  overflow: hidden;
-} */
-
-/* .topnav a {
-  float: left;
-  display: block;
-  padding: 14px 15px;
-} */
-
-.background {
-  width: 100%;
-  height: 100vh;
-  min-height: 100%;
-  position: relative;
-}
-
-.background-image {
-  /* background-image: url("/images/portsmouth.png"); */
-  position: relative; 
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.background-image::before {
-  content: "";
-  background-image: url("/images/portsmouth.png");
-  /* background-color: var(--primary-grey); */
-  background-size: cover;
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  bottom: 0px;
-  left: 0px;
-  opacity: 0.5;
-}
-
-.primary-content {
-  z-index: 5000;
-}
-
-/* .background-dark {
-  background-color: var(--primary-dark);
-  padding: 0px;
-} */
-
-/* .img-container { */
-  /* max-width: 5rem; */
-  /* z-index: 5000; */
-/* } */
-
-.img-container img {
-  max-width: 20rem;
-  border-radius: 50%;
-  border: .5rem solid var(--primary-white);
-}
-
-/* .menu-item {
-  color: var(--primary-white);
-  padding: 0.5rem 1rem;
-  display: block;
-} */
-
-/* .menu-item:hover {
-  color: var(--primary-grey);
-  padding: 0.5rem 1rem;
-  display: block;
-} */
-
-/* .title {
-  font-weight: 400;
-  color: aqua;
-} */
-
-/* .menu-img {
-  height: 100%;
-  width: auto;
-} */
-
-/* .name {
-  font-family: "Montserrat", sans-serif;
-  font-size: 2rem;
-  color: var(--primary-white);
-} */
-
-/* .navbar-position {
-  z-index: 1000;
-} */

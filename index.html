@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Jay Damon</title>
 
@@ -19,28 +19,23 @@
     <link rel="stylesheet" href="/shared/styles.css" />
   </head>
   <body>
-    <div id="menu-component" class="background-dark"></div>
+
+    <div id="menu-component"></div>
 
     <main>
-      <section class="background background-image">
-        <div class="background background-overlay">
-          <div class="primary-content">
-            <div class="img-container">
-              <img
-                src="/images/profile_photo.png"
-                alt="jay profile picture"
-              />
-            </div>
-            <h3>Jay Damon</h3>
-            <p>
-              Software Engineer from Portsmouth, NH
-            </p>
+      <section id="about" class="background background-dark background-image">
+        <div class="primary-content">
+          <div class="img-container">
+            <img src="/images/profile_photo.png"alt="jay profile picture"/>
+          </div>
+          <div class="details">
+            <p class="text">Jay Damon</p>
+            <p class="text">Software Engineer from Portsmouth, NH</p>
           </div>
         </div>
-
       </section>
 
-      <section class="secondary-content">
+      <section id="experience" class="background secondary-content details">
         <h1>Experience</h1>
         <ul>
           <li>
@@ -76,7 +71,7 @@
         </ul>
       </section>
 
-      <section>
+      <section id="projects" class="background background-light secondary-content details">
         <h1>Projects</h1>
         <div class="col" style="background-color: red; border: 1px solid;">
           Money Maker
@@ -86,23 +81,12 @@
         </div>
       </section>
 
-      <section>
+      <section id="contact" class="background background-light secondary-content details">
         <h1>Contact</h1>
-        <a
-          href="mailto:jay.n.damon@gmail.com"
-          target="_blank"
-          class="btn btn-primary"
-          >Contact Me</a
-        >
+        <a href="mailto:jay.n.damon@gmail.com" target="_blank" class="btn btn-primary">Contact Me</a>
       </section>
     </main>
 
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-      crossorigin="anonymous"
-    ></script> -->
     <script src="/index.js"></script>
   </body>
 </html>
