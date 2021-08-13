@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [1.1.0](https://github.com/JayDamon/jaydamon/compare/v1.0.1...v1.1.0) (2021-08-13)
+
+
+### Features
+
+* Shrink photo sizes ([d5d7078](https://github.com/JayDamon/jaydamon/commit/d5d707821fd0576c036da0dc1e8f4331c0641466))
+
 ## [1.0.1](https://github.com/JayDamon/jaydamon/compare/v1.0.0...v1.0.1) (2021-08-13)
 
 
@@ -21,3 +28,4 @@
 
 * **docker:** Add dockerfile and build script ([eb95a35](https://github.com/JayDamon/jaydamon/commit/eb95a3543836cbac6065ad8e21e733a8f51613b0))
 * **head:** Add header style transition on scroll ([6b8e1b0](https://github.com/JayDamon/jaydamon/commit/6b8e1b0ba7772466501b821b1d8492aa320d15c7))
+>>>>>>> main
