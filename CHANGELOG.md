@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [1.1.0](https://github.com/JayDamon/jaydamon/compare/v1.0.1...v1.1.0) (2021-08-13)
+
+
+### Features
+
+* Shrink photo sizes ([d5d7078](https://github.com/JayDamon/jaydamon/commit/d5d707821fd0576c036da0dc1e8f4331c0641466))
+
 ## [1.0.1](https://github.com/JayDamon/jaydamon/compare/v1.0.0...v1.0.1) (2021-08-13)
 
 
