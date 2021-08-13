@@ -25,7 +25,8 @@
 }
 
 .head-shot {
-  content: url("/images/head_shot.jpg");
+  /* content: url("/images/head_shot.jpg"); */
+  content: url("/images/profile_photo.png");
 }
 
 * {
