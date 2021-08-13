@@ -1,0 +1,284 @@
+:root {
+  --primary-light: #0297d0;
+  --primary-middle-color: #264b78;
+  --primary-dark: #132554;
+  --rich-black: #040404;
+  --primary-white: #f3f4f6;
+  --primary-grey: #b7bdcb;
+  --secondary-grey: #737e9a;
+}
+
+.primary-logo {
+  content: url("/images/logo_size.jpg");
+}
+
+.github {
+  content: url("/images/GitHub-Mark-Light-32px.png");
+}
+
+.linkedin {
+  content: url("/images/In-White-28px-R.png");
+}
+
+.portsmouth {
+  content: url("/images/portsmouth.png");
+}
+
+.head-shot {
+  content: url("/images/head_shot.jpg");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+#menu-component {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 5000;
+}
+
+#menu-component :hover {
+  background-color: var(--primary-dark);
+}
+
+.background-dark {
+  background-color: var(--primary-dark);
+  color: var(--primary-white);
+}
+
+.background-light {
+  background-color: var(--primary-white);
+  color: var(--primary-dark);
+}
+
+.top-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.main-nav-horizontal, .main-nav {
+  display: none;
+  list-style-type: none
+}
+
+.main-nav-horizontal, .main-nav li {
+  text-align: right;
+  text-decoration: none;
+  font-size: 26px;
+}
+
+.logo-links {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+.menu-img {
+  padding-left: 1rem;
+}
+
+.name {  
+  font-size: 35px;
+  color: var(--primary-white);
+}
+
+.nav-links {
+  text-decoration: none;
+  columns: black;
+  color: var(--primary-white)
+}
+
+.navbar-toggle {
+  width: 30px;
+  height: 30px;
+  float: right;
+  margin: 10px;
+  font-size: 20px;
+  border-radius: 4px;
+  cursor: pointer; 
+  background-color: inherit;
+  color: var(--primary-white);
+}
+
+.active {
+  display: block;
+}
+
+
+body {
+  background-color: var(--primary-white);
+  color: var(--rich-black);
+}
+
+section {
+  display: flex;
+  justify-content: center;
+}
+
+.background {
+  width: 100%;
+  height: 100vh;
+  min-height: 100%;
+  position: relative;
+  place-items: flex-start center;
+  display: grid;
+}
+
+.background-image {
+  position: relative; 
+  height: 100vh;
+  width: 100%;
+}
+
+.background-image::before {
+  content: "";
+  background-image: url("/images/portsmouth.png");
+  opacity: .3;
+  background-size: cover;
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+
+.background-image::after {
+  display: inline-block;
+}
+
+.background-overlay {
+  background-color: var(--primary-white);
+  opacity: 75%;
+}
+
+.primary-content {
+  padding-top: 15%;
+  color: var(--primary-white); 
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+.img-container {
+  display: grid;
+  place-items: flex-start center;
+}
+
+.img-container img {
+  max-width: 10rem;
+  border-radius: 50%;
+  border: 3px solid var(--primary-white);
+}
+
+.details {
+  display: grid;
+  place-items: flex-start center;
+  padding-top: 1rem;
+  font-size: 1rem;
+}
+
+.text {
+  padding: 1rem 0rem 0rem 0rem;
+}
+
+.secondary-content {
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
+
+@media screen and (min-width: 900px) {
+
+  .top-nav {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 50px;
+    align-items: center;
+  }
+
+  .complete-nav {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .social-nav {
+    justify-self: flex-start;
+  }
+
+  .main-nav-horizontal {
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-self: flex-end;
+  }
+
+  .main-nav li {
+    margin: 0;
+  }
+
+  .main-nav {
+    display: none;
+  }
+
+  .nav-links {
+    margin-left: 40px;
+  }
+
+  .navbar-toggle {
+    display: none;
+  }
+
+  .nav-links:hover {
+    color: var(--primary-grey);
+  }
+
+  .primary-content {
+    padding-top: 15%;
+    color: var(--primary-white); 
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .img-container {
+    display: grid;
+    place-items: flex-start center;
+  }
+  
+  .img-container img {
+    max-width: 20rem;
+    border-radius: 50%;
+    border: 10px solid var(--primary-white);
+  }
+  
+  .details {
+    display: grid;
+    place-items: flex-start center;
+    padding-top: 1rem;
+    font-size: 2rem;
+  }
+  
+  .text {
+    padding: 1rem 0rem 0rem 0rem;
+  }
+
+
+}
