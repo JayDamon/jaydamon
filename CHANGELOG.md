@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.0.1](https://github.com/JayDamon/jaydamon/compare/v1.0.0...v1.0.1) (2021-08-13)
+
+
+### Bug Fixes
+
+* **head:** add menu to main html ([4e40227](https://github.com/JayDamon/jaydamon/commit/4e402270e8042844b5df8798cb3fd018d381ad72))
+
 # 1.0.0 (2021-08-13)
 
 
