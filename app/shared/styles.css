@@ -8,7 +8,6 @@
   --secondary-grey: #737e9a;
 }
 
-
 .primary-logo {
   content: url("/images/logo_size.jpg");
 }
@@ -30,7 +29,6 @@
   padding: 0;
   border: none;
 }
-
 
 body {
   font-family: "Montserrat", sans-serif;
@@ -159,16 +157,15 @@ section {
 }
 
 .primary-content {
-  padding-top: 30%;
-  color: var(--primary-white); 
+  padding-top: 50%;
   font-size: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   position: relative;
 }
 
 .secondary-content {
+  padding-top: 3rem;
   font-size: 10px;
   display: flex;
   flex-direction: column;
@@ -188,13 +185,121 @@ section {
   border: 3px solid var(--primary-white);
 }
 
+.details {
+  display: grid;
+  place-items: center;
+  padding-top: 1rem;
+  font-size: 1rem;
+}
+
+.details-collection > *:not(:last-child) {
+  margin-bottom: 30px; 
+} 
+
 .text {
   padding: 1rem 0rem 0rem 0rem;
 }
 
 .standout-text {
   text-align: center;
-  padding: 0 3rem 0;
+}
+
+/* card component */
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.card-container {
+  max-width: 30rem;
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.card {
+  flex: 0 1 24%;
+  background-color: var(--primary-white);
+  border-radius: 12px;
+  border: 1px solid var(--primary-grey);
+  margin-bottom: 2em; 
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.card-name {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+.card-content {
+  font-size: 14px;
+
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.card hr {
+  margin-top: 16px;
+  border-top: 1px solid var(--primary-dark);
+}
+
+.card ul {
+  list-style-type: none;
+
+  font-size: 14px;
+
+  margin-bottom: 16px;
+}
+
+.card ul img {
+  max-width: 14px;
+}
+
+.link-try {
+  border: none;
+  padding: 12px 24px;
+  max-width: 80px;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 14px;
+
+  font-weight: 100px;
+  color: var(--primary-white);
+  background-color: var(--primary-dark);
+
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+}
+
+.link-try:focus, link-try:hover {
+  color: var(--primary-dark);
+  background-color: var(--primary-white);
+}
+
+.link-git {
+  height: 14px;
+  padding-left: 5px;
+}
+
+
+/* List design */
+.accomplishments ul li {
+  list-style: none;
+  position: relative;
+  padding: 3px 0 2px 35px;
+}
+
+.accomplishments ul li::before {
+  content: "->";
+  position: absolute;
+  top: 6px;
+  left: 0;
 }
 
 @media screen and (min-width: 900px) {
@@ -245,14 +350,12 @@ section {
 
   .primary-content {
     padding-top: 15%;
-    color: var(--primary-white); 
     font-size: 20px;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     position: relative;
   }
-  
+
   .img-container {
     display: grid;
     place-items: flex-start center;
@@ -265,102 +368,7 @@ section {
   }
   
   .details {
-    display: grid;
-    place-items: flex-start center;
-    padding-top: 1rem;
     font-size: 2rem;
   }
-  
-  .text {
-    padding: 1rem 0rem 0rem 0rem;
-  }
 
-}
-
-.cards {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  padding-left: 1rem;
-}
-
-/* card component */
-.card-container {
-  min-width: 25rem;
-  max-width: 30rem;
-  /* margin-left: 16px;
-  margin-right: 16px; */
-  padding-left: 16px;
-  padding-right: 16px;
-}
-
-.card {
-  background-color: var(--primary-white);
-  padding: .5rem;
-  border-radius: 12px;
-  border: 1px solid var(--primary-grey);
-  align-items: center;
-}
-
-.card img {
-  width: 100%;
-  border-radius: 12px;
-}
-
-.card-name {
-  font-size: 20px;
-  font-weight: 400;
-
-  margin-top: 16px;
-}
-
-.card-content {
-  font-size: 14px;
-
-  margin-top: 16px;
-  margin-bottom: 16px;
-}
-
-.card hr {
-  margin-top: 16px;
-  border-top: 1px solid var(--primary-dark);
-}
-
-.link-try {
-  border: none;
-  padding: 12px 24px;
-  max-width: 80px;
-  text-align: center;
-  border-radius: 50px;
-  font-size: 14px;
-
-  font-weight: 100px;
-  color: var(--primary-white);
-  background-color: var(--primary-dark);
-
-  cursor: pointer;
-  margin: 0 auto;
-  display: block;
-}
-
-.link-try:focus, link-try:hover {
-  color: var(--primary-dark);
-  background-color: var(--primary-white);
-}
-
-.card ul {
-  list-style-type: none;
-
-  font-size: 14px;
-
-  margin-bottom: 16px;
-}
-
-.card ul img {
-  max-width: 14px;
-}
-
-.link-git {
-  height: 14px;
-  padding-left: 5px;
 }

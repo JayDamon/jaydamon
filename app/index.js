@@ -2,6 +2,7 @@ let mainNav = document.getElementById("js-menu");
 let navBarToggle = document.getElementById('js-navbar-toggle');
 
 navBarToggle.addEventListener('click', function() {
+    console.log("button clicked");
     mainNav.classList.toggle('active');
 })
 
@@ -10,7 +11,7 @@ const header = document.querySelector("#menu-component");
 const sectionOne = document.querySelector("#about");
 
 const sectionOneOptions = {
-    rootMargin: "-50px 0px 0px 0px"
+    rootMargin: "-75px 0px 0px 0px"
 };
 
 const sectionOneObserver = new IntersectionObserver(function(entries) {
