@@ -1,5 +1,13 @@
 # Semantic Versioning Changelog
 
+# [1.2.0](https://github.com/JayDamon/jaydamon/compare/v1.1.1...v1.2.0) (2021-08-14)
+
+
+### Features
+
+* **layout:** Adjust layout and add detail ([adfbc64](https://github.com/JayDamon/jaydamon/commit/adfbc64a1135fd24340fe833b8c8fe4f10ab5974))
+* **portfolio:** Add portfolio section ([b301843](https://github.com/JayDamon/jaydamon/commit/b30184329599dec0068cea475b301171039dc8c2))
+
 ## [1.1.1](https://github.com/JayDamon/jaydamon/compare/v1.1.0...v1.1.1) (2021-08-13)
 
 
