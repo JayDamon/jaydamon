@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Jay Damon</title>
 
-    <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link
       href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap"
@@ -18,6 +17,7 @@
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="stylesheet" href="/shared/styles.css" />
   </head>
+
   <body>
 
     <header>
@@ -41,7 +41,7 @@
               <ul class="main-nav-horizontal">
                 <li><a href="#about" class="nav-links">About</a></li>
                 <li><a href="#experience" class="nav-links">Experience</a></li>
-                <li><a href="#projects" class="nav-links">Projects</a></li>
+                <li><a href="#projects" class="nav-links">Portfolio</a></li>
                 <li><a href="#contact" class="nav-links">Contact</a></li>
               </ul>
             </div>
@@ -49,7 +49,7 @@
             <ul class="main-nav" id="js-menu">
               <li><a href="#about" class="nav-links">About</a></li>
               <li><a href="#experience" class="nav-links">Experience</a></li>
-              <li><a href="#projects" class="nav-links">Projects</a></li>
+              <li><a href="#projects" class="nav-links">Portfolio</a></li>
               <li><a href="#contact" class="nav-links">Contact</a></li>
             </ul>
         </nav>
@@ -60,7 +60,7 @@
       <section id="about" class="background background-dark background-image">
         <div class="primary-content">
           <div class="img-container">
-            <img src="/images/profile_photo.png"alt="jay profile picture"/>
+            <img src="/images/profile_photo.png" alt="jay profile picture"/>
           </div>
           <div class="details">
             <p class="text">Jay Damon</p>
@@ -71,11 +71,15 @@
 
       <section id="experience" class="background secondary-content details">
         <h1>Experience</h1>
+        <p class="standout-text">I have over 4 years of professional development experience. While I do have some front end experience,
+          my expertise is in developing highly scalable back end solutions for web applications. I am currently
+          acting as the back end technical lead on a ground up rebuild of a legacy product.
+        </p>
         <ul>
           <li>
             <ul>
               <li>
-                <h3>Athenium Analytics</h3>
+                <h4>Athenium Analytics</h4>
               </li>
               <ul>
                 <li>
@@ -90,7 +94,7 @@
           <li>
             <ul>
               <li>
-                <h3>Lindt & Sprungli</h3>
+                <h4>Lindt & Sprungli</h4>
               </li>
               <ul>
                 <li>
@@ -106,12 +110,79 @@
       </section>
 
       <section id="projects" class="background background-light secondary-content details">
-        <h1>Projects</h1>
-        <div class="col" style="background-color: red; border: 1px solid;">
-          Money Maker
-        </div>
-        <div class="col" style="background-color: red; border: 1px solid;">
-          Media Library
+        <h1>Portfolio</h1>
+        <div class="cards">
+          <div class="card-container">
+
+            <div class="card">
+              <img src="/images/MoneyMakerScreen.png" alt="Media Library"/>
+              <p class="card-name">Money Maker: Personal Finance</p>
+              <hr>
+              <p class="card-content">Personal side project for managing my personal finances and tracking my income/expenses</p>
+              <ul>
+                <li>Security: Keycloak</li>
+                <li>
+                  Front End: Typescript with Angular
+                  <a href="https://github.com/JayDamon/cid-moneymaker-client" target="_blank" rel="noopener noreferrer" class="link-git">
+                    <img src="images/GitHub-Mark-32px.png"/>
+                  </a>                  
+                </li>
+                <li>
+                  Back End: Java with Spring Boot
+                  <a href="https://github.com/JayDamon/oaka-transaction-service" target="_blank" rel="noopener noreferrer" class="link-git">
+                    <img src="images/GitHub-Mark-32px.png"/>
+                  </a>      
+                </li>
+                <li>Database: Mysql</li>
+                <li>Build Tools: CircleCI</li>
+              </ul>
+              <a href="https://moneymaker-dev.factotumsoftware.com/" target="_blank" rel="noopener noreferrer" class="link-try">Try it out!</a>
+            </div>
+          </div>
+          
+          <div class="card-container">
+            <div class="card">
+              <img src="/images/MediaAppScreen.png" alt="Media Library"/>
+              <p class="card-name">Media Library</p>
+              <hr>
+              <p class="card-content">Fun project created durign the pnademic to manage what movies and tv shows I wanted to check out.</p>
+              <ul>
+                <li>
+                  Front End: Typescript with Angular
+                  <a href="https://github.com/JayDamon/add-to-plex" target="_blank" rel="noopener noreferrer" class="link-git">
+                    <img src="images/GitHub-Mark-32px.png"/>
+                  </a>                  
+                </li>
+                <li>
+                  Back End: Java with Spring Boot
+                  <a href="https://github.com/JayDamon/plex-backend" target="_blank" rel="noopener noreferrer" class="link-git">
+                    <img src="images/GitHub-Mark-32px.png"/>
+                  </a>      
+                </li>
+                <li>Database: Mysql</li>
+                <li>Build Tools: CircleCI</li>
+              </ul>
+              <a href="https://plex-dev.factotumsoftware.com/" target="_blank" rel="noopener noreferrer" class="link-try">Try it out!</a>
+            </div>
+          </div>
+          
+          <div class="card-container">
+            <div class="card">
+              <img src="/images/JayDamonAppScreen.png" alt="Media Library"/>
+              <p class="card-name">Jay Damon Portfoli</p>
+              <hr>
+              <p class="card-content">This website you are on now!</p>
+              <ul>
+                <li>
+                  Front End: JavaScript/HTML/CSS
+                  <a href="https://github.com/JayDamon/jaydamon" target="_blank" rel="noopener noreferrer" class="link-git">
+                    <img src="images/GitHub-Mark-32px.png"/>
+                  </a>                  
+                </li>
+                <li>Build Tools: CircleCI</li>
+              </ul>
+            </div>
+          </div>
         </div>
       </section>
 

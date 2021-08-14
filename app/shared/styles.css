@@ -3,10 +3,11 @@
   --primary-middle-color: #264b78;
   --primary-dark: #132554;
   --rich-black: #040404;
-  --primary-white: #f3f4f6;
+  --primary-white: white;
   --primary-grey: #b7bdcb;
   --secondary-grey: #737e9a;
 }
+
 
 .primary-logo {
   content: url("/images/logo_size.jpg");
@@ -24,20 +25,17 @@
   content: url("/images/portsmouth.png");
 }
 
-.head-shot {
-  content: url("/images/profile_photo.png");
-}
-
 * {
   margin: 0;
   padding: 0;
   border: none;
 }
 
+
 body {
   font-family: "Montserrat", sans-serif;
 }
-
+ 
 #menu-component {
   overflow: hidden;
   position: fixed;
@@ -77,14 +75,14 @@ body {
   font-size: 26px;
 }
 
+.menu-img {
+  padding-left: 1rem;
+}
+
 .logo-links {
   display: flex;
   flex-direction: row;
   align-items: center;
-  padding-left: 1rem;
-}
-
-.menu-img {
   padding-left: 1rem;
 }
 
@@ -115,7 +113,6 @@ body {
   display: block;
 }
 
-
 body {
   background-color: var(--primary-white);
   color: var(--rich-black);
@@ -132,7 +129,6 @@ section {
   min-height: 100%;
   position: relative;
   place-items: flex-start center;
-  display: grid;
 }
 
 .background-image {
@@ -163,13 +159,22 @@ section {
 }
 
 .primary-content {
-  padding-top: 15%;
+  padding-top: 30%;
   color: var(--primary-white); 
   font-size: 10px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   position: relative;
+}
+
+.secondary-content {
+  font-size: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  max-width: 1200px;
 }
 
 .img-container {
@@ -183,23 +188,13 @@ section {
   border: 3px solid var(--primary-white);
 }
 
-.details {
-  display: grid;
-  place-items: flex-start center;
-  padding-top: 1rem;
-  font-size: 1rem;
-}
-
 .text {
   padding: 1rem 0rem 0rem 0rem;
 }
 
-.secondary-content {
-  font-size: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  position: relative;
+.standout-text {
+  text-align: center;
+  padding: 0 3rem 0;
 }
 
 @media screen and (min-width: 900px) {
@@ -280,5 +275,92 @@ section {
     padding: 1rem 0rem 0rem 0rem;
   }
 
+}
 
+.cards {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding-left: 1rem;
+}
+
+/* card component */
+.card-container {
+  min-width: 25rem;
+  max-width: 30rem;
+  /* margin-left: 16px;
+  margin-right: 16px; */
+  padding-left: 16px;
+  padding-right: 16px;
+}
+
+.card {
+  background-color: var(--primary-white);
+  padding: .5rem;
+  border-radius: 12px;
+  border: 1px solid var(--primary-grey);
+  align-items: center;
+}
+
+.card img {
+  width: 100%;
+  border-radius: 12px;
+}
+
+.card-name {
+  font-size: 20px;
+  font-weight: 400;
+
+  margin-top: 16px;
+}
+
+.card-content {
+  font-size: 14px;
+
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+.card hr {
+  margin-top: 16px;
+  border-top: 1px solid var(--primary-dark);
+}
+
+.link-try {
+  border: none;
+  padding: 12px 24px;
+  max-width: 80px;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 14px;
+
+  font-weight: 100px;
+  color: var(--primary-white);
+  background-color: var(--primary-dark);
+
+  cursor: pointer;
+  margin: 0 auto;
+  display: block;
+}
+
+.link-try:focus, link-try:hover {
+  color: var(--primary-dark);
+  background-color: var(--primary-white);
+}
+
+.card ul {
+  list-style-type: none;
+
+  font-size: 14px;
+
+  margin-bottom: 16px;
+}
+
+.card ul img {
+  max-width: 14px;
+}
+
+.link-git {
+  height: 14px;
+  padding-left: 5px;
 }
