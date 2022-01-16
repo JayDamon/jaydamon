@@ -26,8 +26,8 @@
     [
       "@semantic-release-plus/docker",
       {
-        "name": "repo.treescale.com/jaydamon/jaydamon",
-        "registryUrl": "repo.treescale.com",
+        "name": "cloud.canister.io:5000/jaymond87/jaydamon",
+        "registryUrl": "cloud.canister.io:5000",
         "publishLatestTag": true,
         "publishMajorTag": true,
         "publishMinorTag": true
