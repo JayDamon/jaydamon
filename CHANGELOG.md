@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.3.1](https://github.com/JayDamon/jaydamon/compare/v1.3.0...v1.3.1) (2022-01-16)
+
+
+### Bug Fixes
+
+* update docker registrly name ([c288a48](https://github.com/JayDamon/jaydamon/commit/c288a48229ecf1cd21bd09bfe849db4778d1a434))
+
 # [1.3.0](https://github.com/JayDamon/jaydamon/compare/v1.2.0...v1.3.0) (2022-01-16)
 
 
