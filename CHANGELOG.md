@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [1.3.0](https://github.com/JayDamon/jaydamon/compare/v1.2.0...v1.3.0) (2022-01-16)
+
+
+### Features
+
+* **release:** Change registry url ([d8fcc8d](https://github.com/JayDamon/jaydamon/commit/d8fcc8d86cec8a5d4d69711e27fe43f1768aec4e))
+
 # [1.2.0](https://github.com/JayDamon/jaydamon/compare/v1.1.1...v1.2.0) (2021-08-14)
 
 
