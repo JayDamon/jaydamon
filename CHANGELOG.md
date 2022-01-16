@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.3.2](https://github.com/JayDamon/jaydamon/compare/v1.3.1...v1.3.2) (2022-01-16)
+
+
+### Bug Fixes
+
+* Externalize docker build and push ([a4981e5](https://github.com/JayDamon/jaydamon/commit/a4981e5d300bf9ab68664cc5a6cab5e923815918))
+
 ## [1.3.1](https://github.com/JayDamon/jaydamon/compare/v1.3.0...v1.3.1) (2022-01-16)
 
 
