@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+## [1.3.3](https://github.com/JayDamon/jaydamon/compare/v1.3.2...v1.3.3) (2022-05-08)
+
+
+### Bug Fixes
+
+* change project urls ([6896547](https://github.com/JayDamon/jaydamon/commit/689654798e596226c7d723dd93c8ca661affeb7e))
+
 ## [1.3.2](https://github.com/JayDamon/jaydamon/compare/v1.3.1...v1.3.2) (2022-01-16)
 
 
