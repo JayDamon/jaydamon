@@ -6,11 +6,15 @@ orbs:
 workflows:
   aws-sync:
     jobs:
-      - build:
+      - deploy-dev:
+          context: aws-login
+      - deploy-prod:
+          requires:
+            - deploy-dev
           context: aws-login
 
 jobs:
-  build:
+  deploy-dev:
     docker:
       - image: "cimg/python:3.10"
     steps:
@@ -22,3 +26,14 @@ jobs:
             --delete
           from: ./app
           to: "s3://jaydamon-dev.factotum-software.com"
+  deploy-prod:
+    docker:
+      - image: "cimg/python:3.10"
+    steps:
+      - aws-s3/sync:
+          arguments: |
+            --acl public-read \
+            --cache-control "max-age=86400" \
+            --delete
+          from: "s3://jaydamon-dev.factotum-software.com"
+          to: "s3://jaydamon.factotum-software.com"
