@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [1.6.0](https://github.com/JayDamon/jaydamon/compare/v1.5.0...v1.6.0) (2023-02-25)
+
+
+### Features
+
+* Add new profile photo and compressed background ([487a30c](https://github.com/JayDamon/jaydamon/commit/487a30cf11b672149fd7a095fe7837135695709a))
+
 # [1.5.0](https://github.com/JayDamon/jaydamon/compare/v1.4.0...v1.5.0) (2023-02-25)
 
 
