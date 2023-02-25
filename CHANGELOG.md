@@ -1,5 +1,18 @@
 # Semantic Versioning Changelog
 
+# [1.4.0](https://github.com/JayDamon/jaydamon/compare/v1.3.3...v1.4.0) (2023-02-25)
+
+
+### Bug Fixes
+
+* update node version ([1df9032](https://github.com/JayDamon/jaydamon/commit/1df9032a074e0cbc65c4057485a4d89f6750c130))
+* Update to new node image ([9305887](https://github.com/JayDamon/jaydamon/commit/930588792d5ac5dbd8aff11cf0fc4488389197f2))
+
+
+### Features
+
+* Revert to kubernetes/docker deploy ([c592a8c](https://github.com/JayDamon/jaydamon/commit/c592a8c3f6ef201a7fea9d49a8c0c03b81a7c2a1))
+
 ## [1.3.3](https://github.com/JayDamon/jaydamon/compare/v1.3.2...v1.3.3) (2022-05-08)
 
 
