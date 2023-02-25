@@ -1,39 +1,39 @@
 version: 2.1
 
-orbs:
-  aws-s3: circleci/aws-s3@3.0
-
 workflows:
-  aws-sync:
+  my-workflow:
     jobs:
-      - deploy-dev:
-          context: aws-login
-      - deploy-prod:
-          requires:
-            - deploy-dev
-          context: aws-login
+      - build:
+          context:
+            - docker-login
+          filters:
+            branches:
+              only:
+                - main
 
 jobs:
-  deploy-dev:
+  build:
     docker:
-      - image: "cimg/python:3.10"
+      - image: 'circleci/node:latest'
     steps:
       - checkout
-      - aws-s3/sync:
-          arguments: |
-            --acl public-read \
-            --cache-control "max-age=86400" \
-            --delete
-          from: ./app
-          to: "s3://jaydamon-dev.factotum-software.com"
-  deploy-prod:
-    docker:
-      - image: "cimg/python:3.10"
-    steps:
-      - aws-s3/sync:
-          arguments: |
-            --acl public-read \
-            --cache-control "max-age=86400" \
-            --delete
-          from: "s3://jaydamon-dev.factotum-software.com"
-          to: "s3://jaydamon.factotum-software.com"
+      - run:
+          name: Setup VirtualEnv
+          command: |
+            echo 'export IMAGE_NAME=jaydamon' >> $BASH_ENV
+            echo 'export DOCKER_REPOSITORY=cloud.canister.io:5000/jaymond87' >> $BASH_ENV
+      - setup_remote_docker:
+          version: 19.03.13
+      - run:
+          name: setup semantic-release
+          command: |
+            npm set prefix=/home/circleci/npm && echo 'export PATH=$HOME/circleci/npm/bin:$PATH' >> /home/circleci/.bashrc
+            npm install -g semantic-release @semantic-release/{git,changelog,exec} semantic-release-plus @semantic-release-plus/docker
+      - run:
+          name: Prepare Release
+          command: |
+            /home/circleci/npm/bin/semantic-release
+      - run:
+          name: Build and Push Image
+          command: |
+            bash docker_build_push.sh $DOCKER_REPOSITORY/$IMAGE_NAME $DOCKER_USERNAME $DOCKER_PASSWORD
