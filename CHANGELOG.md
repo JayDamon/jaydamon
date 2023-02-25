@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [1.5.0](https://github.com/JayDamon/jaydamon/compare/v1.4.0...v1.5.0) (2023-02-25)
+
+
+### Features
+
+* external links open in new tab ([3ac56cb](https://github.com/JayDamon/jaydamon/commit/3ac56cb651f9fc196f0e4931f9985b37a29c3e76))
+
 # [1.4.0](https://github.com/JayDamon/jaydamon/compare/v1.3.3...v1.4.0) (2023-02-25)
 
 
