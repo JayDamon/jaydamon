@@ -2,9 +2,19 @@ let mainNav = document.getElementById("js-menu");
 let navBarToggle = document.getElementById('js-navbar-toggle');
 
 navBarToggle.addEventListener('click', function() {
-    console.log("button clicked");
     mainNav.classList.toggle('active');
-})
+});
+
+let navMenuElement = document.getElementsByClassName('js-nav-link-toggle');
+
+console.log(navMenuElement.length);
+
+for (let i = 0; i < navMenuElement.length; i++) {
+    console.log(navMenuElement[i]);
+    navMenuElement[i].addEventListener('click', function() {
+        mainNav.classList.toggle('active');
+    });
+}
 
 const header = document.querySelector("#menu-component");
 

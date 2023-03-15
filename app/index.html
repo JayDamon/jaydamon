@@ -47,10 +47,10 @@
             </div>
           </div>
             <ul class="main-nav" id="js-menu">
-              <li><a href="#about" class="nav-links">About</a></li>
-              <li><a href="#experience" class="nav-links">Experience</a></li>
-              <li><a href="#projects" class="nav-links">Portfolio</a></li>
-              <li><a href="#contact" class="nav-links">Contact</a></li>
+              <li><a href="#about" class="nav-links js-nav-link-toggle">About</a></li>
+              <li><a href="#experience" class="nav-links js-nav-link-toggle">Experience</a></li>
+              <li><a href="#projects" class="nav-links js-nav-link-toggle">Portfolio</a></li>
+              <li><a href="#contact" class="nav-links js-nav-link-toggle">Contact</a></li>
             </ul>
         </nav>
       </div>
@@ -73,39 +73,91 @@
         <div class="secondary-content background-light">
           <div class="details details-collection">
             <h1>Experience</h1>
-            <p class="standout-text">I have over 4 years of professional development experience. While I do have some front end experience,
-              my expertise is in developing highly scalable back end solutions for web applications. I am currently
-              acting as the back end technical lead on a ground up rebuild of a legacy product.
+            <p class="standout-text">I have over 7 years of professional development experience. 
+              While I do have some front end experience, my expertise is in developing highly 
+              scalable back end solutions for web applications.
             </p>
             
-            <div class="accomplishments">
+            <div class="resume">
+
+              <div class="company">
+              <h4>Amazon (Global Mile)</h4>
+
+              <ul class="list">
+                <li class="list-item">
+                  Part of the ShipDocs team in the Global Mile organization, 
+                  building microservices to support Cross Border Transportation Documents.
+                </li>
+                <li class="list-item">
+                  Diagnosed key bug requiring manual intervention which reduced the operation 
+                  load of the team by over 10% by adding automatic retries with AWS SQS and implementing a DLQ.
+                </li>
+                <li class="list-item">
+                  Collaborated with customers to design a feature enabling the bulk download of up to 10,000 
+                  documents in a single zip file using AWS Lambda, EC2, S3, and API Gateway.
+                </li>
+                <li class="list-item">
+                  Improved developer documentation for client onboarding resulting in a reduced onboarding time.
+                </li>
+                <li class="list-item">
+                  Mentored 2 junior developers on the team, improved new hire onboarding documentation, and wrote on-call triage process.
+                </li>
+                <li class="list-item">
+                  Led Q4 peak war room meeting of combined 3 team group reducing high severity issues compared to the previous year.
+                </li>
+              </ul>
+            </div>
+
+            <div class="company">
               <h4>Athenium Analytics</h4>
 
               <ul class="list">
                 <li class="list-item">
-                  <p>Back end Lead architect and developer for GaugeQuality, an insurance quality assurance product</p>
+                  Designed engine capable of processing user-created rule sets to validate questionnaire 
+                  results in less than 5000 milliseconds.
                 </li>
                 <li class="list-item">
-                  <p>Write and architect spring boot based microservice architecture</p>
+                  Spearheaded team of 7 to improve performance of public-facing API resulting in a 50% 
+                  request per second improvement.
                 </li>
                 <li class="list-item">
-                  <p>Work with AWS services including ECS, ECR, EC2, S3, Cloudwatch, SQS, SNS, SES</p>
+                  Implemented internal authentication and authorization framework for microservice security 
+                  with Spring Security provided support for 
+                  multitenancy and user-customized data security rules.
+                </li>
+                <li class="list-item">
+                  Led backend development of greenfield microservice application using Java with Spring Boot, 
+                  PostgreSQL, and AWS to replace legacy 
+                  platform used by more than 100 business customers.
+                </li>
+                <li class="list-item">
+                  Implemented IAC platform Terraform to replace manual provisioning and management of AWS 
+                  resources reducing environment consistency issues to 0.
                 </li>
               </ul>
-                
+            </div>
+            <div class="company">
               <h4>Lindt & Sprungli</h4>
 
               <ul class="list">
                 <li class="list-item">
-                  <p>Built a data collection application with Java to collect data from multiple data sources including SQL Servier, Access, Excel, Word, and CSVs</p>
+                  Designed and developed a Safety Reporting system in collaboration with the Environment, 
+                  Health, and Safety team using Python and SQL Server, 
+                  simplifying accident reporting and leading to an increased reporting of 20%.
                 </li>
                 <li class="list-item">
-                  <p>Designed and developed a Safety Reporting system using Pything to enable the Manufacturing Plant to more effectively analyze and prevent accidents</p>
+                  Created an automated dashboard for the management team using Python, VBA, and Excel to provide 
+                  real-time insights on manufacturing performance on over 200 data points.
                 </li>
                 <li class="list-item">
-                  <p>Developed an automated dashboard for our Performance Control (PCS) system in Excel with VBA.</p>
+                  Built ETL application with Java to consolidate data from data sources including SQL Databases, Excel, 
+                  Word, and CSV into a single database saving 12 hours per week of manual reporting work.
                 </li>
               </ul>
+              </div>
+              <div class="details details-collection centered">
+                <span>My Resume: <a href="/images/Jay Damon Resume.pdf" download class="btn btn-primary">download</a></span>
+              </div>
             </div>
           </div>
         </div>
@@ -113,7 +165,7 @@
 
       <section id="projects">
         <div class="secondary-content background-light">
-          <div class="details details-collectio centered">
+          <div class="details details-collection centered">
             <h1>Portfolio</h1>
             <div class="cards">
               <div class="card-container">
