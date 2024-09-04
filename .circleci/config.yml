@@ -21,7 +21,7 @@ jobs:
           name: Setup VirtualEnv
           command: |
             echo 'export IMAGE_NAME=jaydamon' >> $BASH_ENV
-            echo 'export DOCKER_REPOSITORY=cloud.canister.io:5000/jaymond87' >> $BASH_ENV
+            echo 'export DOCKER_REPOSITORY=trance0302' >> $BASH_ENV
       - setup_remote_docker:
           version: 19.03.13
       - run:
