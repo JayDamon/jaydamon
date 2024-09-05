@@ -14,7 +14,7 @@ workflows:
 jobs:
   build:
     docker:
-      - image: 'cimg/node:19.7.0'
+      - image: 'cimg/node:22.7.0'
     steps:
       - checkout
       - run:
@@ -23,7 +23,7 @@ jobs:
             echo 'export IMAGE_NAME=jaydamon' >> $BASH_ENV
             echo 'export DOCKER_REPOSITORY=trance0302' >> $BASH_ENV
       - setup_remote_docker:
-          version: 19.03.13
+          version: docker23
       - run:
           name: setup semantic-release
           command: |
