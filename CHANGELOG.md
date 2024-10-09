@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [1.8.0](https://github.com/JayDamon/jaydamon/compare/v1.7.0...v1.8.0) (2024-10-09)
+
+
+### Features
+
+* Add new resume ([a63b1ad](https://github.com/JayDamon/jaydamon/commit/a63b1ad975bda934e12fc828a366701db7567a95))
+
 # [1.7.0](https://github.com/JayDamon/jaydamon/compare/v1.6.0...v1.7.0) (2024-09-05)
 
 
