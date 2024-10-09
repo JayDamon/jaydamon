@@ -73,11 +73,32 @@
         <div class="secondary-content background-light">
           <div class="details details-collection">
             <h1>Experience</h1>
-            <p class="standout-text">I have over 7 years of professional development experience. 
+            <p class="standout-text">I have over 9 years of professional development experience. 
               While I do have some front end experience, my expertise is in developing highly 
               scalable back end solutions for web applications.
             </p>
-            
+
+            <div class="resume">
+
+              <div class="company">
+              <h4>Fidelity Investments</h4>
+
+              <ul class="list">
+                <li class="list-item">
+                  Developed a UI using Angular and Typescript for initiating and tracking the creation of database recovery snapshots, 
+                  simplifying an error-prone process and ensuring the reliability of database backups for platforms representing over $140 billion in assets
+                </li>
+                <li class="list-item">
+                  Re-engineered 2 applications using Java, Spring Boot, and Docker and migrated both from on-premises servers to AWS EKS, 
+                  improving scalability and eliminating rehydration and other server maintenance
+                </li>
+                <li class="list-item">
+                  Automated build and deployment process using Jenkins and Groovy, eliminating deployment 
+                  errors and reducing developer involvement by 2 hours per week
+                </li>
+              </ul>
+            </div>
+
             <div class="resume">
 
               <div class="company">
@@ -89,12 +110,16 @@
                   building microservices to support Cross Border Transportation Documents.
                 </li>
                 <li class="list-item">
-                  Diagnosed key bug requiring manual intervention which reduced the operation 
-                  load of the team by over 10% by adding automatic retries with AWS SQS and implementing a DLQ.
+                  Diagnosed a hi-impact bug where traffic spikes led to message processing failure and dropping from the queue for a system handling over 500k documents daily. 
+                  Resolved issue by flattening out the processing of SQS messages and added a DLQ with automated retry logic, reducing operational load by over 10%
                 </li>
                 <li class="list-item">
-                  Collaborated with customers to design a feature enabling the bulk download of up to 10,000 
-                  documents in a single zip file using AWS Lambda, EC2, S3, and API Gateway.
+                  Collaborated with customers to design a feature enabling the bulk download of up to 10,000 documents in a single zip file, allowing for simplified compliance 
+                  audits on shipping documents in support of Amazons e-commerce platform. Achieved by leveraging S3 batch with a Java-based AWS Lambda function for zipping the files upon request
+                </li>
+                <li class="list-item">
+                  Led Q4 peak war room meeting of a combined group of 3 teams, achieving a reduction in high severity issues compared to the previous 
+                  year by 20% while ensuring the stability of a system supporting over $100 million in global shipments
                 </li>
                 <li class="list-item">
                   Improved developer documentation for client onboarding resulting in a reduced onboarding time.
