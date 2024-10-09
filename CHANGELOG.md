@@ -1,5 +1,12 @@
 # Semantic Versioning Changelog
 
+# [1.7.0](https://github.com/JayDamon/jaydamon/compare/v1.6.0...v1.7.0) (2024-09-05)
+
+
+### Features
+
+* Update to new dockerhub registry ([3e598bd](https://github.com/JayDamon/jaydamon/commit/3e598bd3138c33d61b342464afb994af2447bfca))
+
 # [1.6.0](https://github.com/JayDamon/jaydamon/compare/v1.5.0...v1.6.0) (2023-02-25)
 
 
